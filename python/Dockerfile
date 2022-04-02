@@ -4,7 +4,7 @@ WORKDIR /opt/app-root
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 5000
 
 USER root
 
