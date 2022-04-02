@@ -10,9 +10,8 @@ USER root
 
 RUN chgrp -R 0 /opt/app-root && \
     chmod -R g=u /opt/app-root && \
-    chown -R 1001:0 /opt/app-root \
-    dnf install python2-pip \
-    pip install Flask
+    chown -R 1001:0 /opt/app-root && \   
+    pip3 install Flask
 
 USER 1001
 
