@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi-minimal8/python-38
+FROM registry.access.redhat.com/ubi8/python-38
 
 WORKDIR /opt/app-root
 
@@ -15,4 +15,4 @@ RUN chgrp -R 0 /opt/app-root && \
 
 USER 1001
 
-CMD ["sh", "-c", "echo 'sleep 20' && sleep 20 && python2 app.py"]
+CMD ["sh", "-c", "echo 'sleep 20' && sleep 20 && python app.py"]
